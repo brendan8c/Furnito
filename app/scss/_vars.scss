@@ -1,0 +1,29 @@
+// Color vars 
+$blu: #0099FF;
+// Language rus - start
+@mixin d400 {
+    font-family: 'DidactGothic-Regular';
+    font-weight: 400;
+}
+
+@mixin c300 {
+    font-family: 'Comfortaa-Light';
+    font-weight: 300;
+}
+
+@mixin c400 {
+    font-family: 'Comfortaa-Regular';
+    font-weight: 400;
+}
+
+@mixin c500 {
+    font-family: 'Comfortaa-Medium';
+    font-weight: 500;
+}
+
+@mixin c700 {
+    font-family: 'Comfortaa-Bold';
+    font-weight: 700;
+}
+
+// Language rus - end
