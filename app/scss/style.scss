@@ -80,45 +80,50 @@
                 color: #fff;
                 cursor: pointer;
             }
+            &-box select {
+                width: 300px;
+                height: 50px;
+                background-color: #bbbbbb;
+                border-radius: 25px;
+                border: 1px solid $blu;
+                padding-left: 30px;
+                padding-right: 60px;
+                // ! добавить при адаптиве
+                // margin-bottom: 15px;
+                outline: none;
+                -webkit-appearance: none;
+                appearance: none;
+                cursor: pointer;
+                @include d400;
+                font-size: 20px;
+                color: #4c4c4c;
+                option {
+                    @include d400;
+                    font-size: 20px;
+                    color: #5b5b5b;
+                }
+            }
             &-box {
-                &_down {
-                    position: absolute;
-                    background-size: cover;
-                    top: 188px;
-                    left: 427px;
-                    border: none;
-                    outline: none;
-                    background-color: transparent;
-                    cursor: pointer;
+                position: relative;
+                display: inline-block;
+                &:hover {
                     svg {
-                        width: 22px;
-                        height: 22px;
                         path {
-                            fill: $blu;
+                            transition: all .5s;
+                            fill: #7faebd;
                         }
                     }
                 }
-                select {
-                    width: 300px;
-                    height: 50px;
-                    background-color: #bbbbbb;
-                    border-radius: 25px;
-                    border: 1px solid $blu;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    outline: none;
-                    appearance: none;
-                    cursor: pointer;
-                    @include d400;
-                    font-size: 20px;
-                    color: #4c4c4c;
-                    option {
-                        @include d400;
-                        font-size: 20px;
-                        color: #5b5b5b;
-                        font {}
-                    }
-                }
+            }
+            &-box svg {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                right: 55%;
+                transform: translate(50%, 50%);
+                fill: lightblue;
+                pointer-events: none;
+                transition: fill 0.5s;
             }
         }
     }
@@ -143,22 +148,19 @@
     }
 }
 
-.name-in {
-    margin-bottom: 15px;
+.wrapper__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.name-in,
 .email-in {
     margin-bottom: 15px;
 }
 
-.form-in {}
-
 .title-in {
     margin-bottom: 30px;
-}
-
-.region-in {
-    margin-bottom: 15px;
 }
 
 // #1grn header - end
