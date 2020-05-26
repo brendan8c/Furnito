@@ -21,7 +21,8 @@ gulp.task('script', function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/Vide-0.5.1/dist/jquery.vide.js',
-            'node_modules/HTML5-Background-Video/jquery.backgroundvideo.js'
+            'node_modules/typed.js/lib/typed.js',
+            'node_modules/jarallax/dist/jarallax.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

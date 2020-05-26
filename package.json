@@ -10,6 +10,7 @@
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.7",
+        "emojilib": "^2.4.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-concat": "^2.6.1",
@@ -17,11 +18,13 @@
         "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.0.2",
         "gulp-uglify": "^3.0.2",
+        "jarallax": "^1.12.1",
         "magnific-popup": "^1.1.0",
         "normalize.css": "^8.0.1",
         "slick-carousel": "^1.8.1"
     },
     "dependencies": {
-        "jquery": "^3.5.1"
+        "jquery": "^3.5.1",
+        "typed.js": "^2.0.11"
     }
 }
