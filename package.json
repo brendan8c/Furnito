@@ -19,6 +19,8 @@
         "gulp-sass": "^4.0.2",
         "gulp-uglify": "^3.0.2",
         "jarallax": "^1.12.1",
+        "jquery.scrollto": "^2.1.2",
+        "js-cookie": "^2.2.1",
         "magnific-popup": "^1.1.0",
         "normalize.css": "^8.0.1",
         "slick-carousel": "^1.8.1"

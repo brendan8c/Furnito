@@ -20,4 +20,23 @@ $(function() {
         speed: 0.2
     });
 });
-//#2grn Эффект для текста –—––—––—–––—––—–––—––—–––—––—– start
+// #2grn scroll up
+$(function() {
+    $('.scroll--up').click(function() {
+        $.scrollTo($('#header'), { duration: 800 });
+    });
+});
+// #2grn coockies 
+// Cookies создать для всего сайта
+$(function() {
+    $.Cookies.set('name', 'value')
+});
+// Cookies прочитать
+$(function() {
+    Cookies.get('name') // => 'value'
+    Cookies.get('nothing') // => undefined
+});
+// Cookies удалить
+$(function() {
+    Cookies.remove('name')
+});
