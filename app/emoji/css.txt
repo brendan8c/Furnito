@@ -1,5 +1,0 @@
-background: url(../img/emoji.png);
-background-position:95.94594594594594% 48.00235017626322%;
-background-size:5418.75% 5418.75%	
-
-по этим координатам он выберет сердечко.
