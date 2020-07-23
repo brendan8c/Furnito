@@ -7,8 +7,44 @@
         height: 65px;
         width: 100%;
         background-color: #3378CA;
+        padding-top: 20px;
+        &_wrap {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 400px;
+            margin-right: 200px;
+        }
+        &--page {
+            @include c400;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            // background-color: #0099ff54;
+            // border: 1px solid #5193cc;
+            // border-radius: 30px;
+            padding: 5px 10px;
+            &:hover {
+                text-shadow: 0 0 10px #000000;
+            }
+        }
     }
     &__box {
+        &--logo {
+            position: absolute;
+            left: 7px;
+            top: -55px;
+            background-image: url(../img/logo1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 228px;
+            height: 99px;
+            transition: all .5s;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05)
+            }
+        }
         z-index: 2;
         position: absolute;
         width: 100%;
