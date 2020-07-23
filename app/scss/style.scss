@@ -132,8 +132,7 @@
             border-radius: 13px;
             border: 2px solid #1C4270;
             box-shadow: 0 0 15px #004496;
-            padding-top: 15px;
-            padding-bottom: 20px;
+            padding: 20px;
             &-title {
                 @include c700;
                 font-size: 22px;
@@ -243,6 +242,17 @@
         top: 0;
         margin-top: 65px;
     }
+    // background img
+    &__bacground {
+        background-image: url(../img/signup_form7.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: none;
+    }
 }
 
 #cout-00 {
@@ -316,6 +326,7 @@
                 height: 500px;
                 background-color: #f3b777;
                 margin-right: 200px;
+                margin-left: 50px;
                 padding: 30px;
                 border-radius: 10vh;
                 border: 1px solid #1C4270;
