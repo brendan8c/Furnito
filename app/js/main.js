@@ -40,3 +40,14 @@ $(function() {
 $(function() {
     Cookies.remove('name')
 });
+// Бургкер меню
+$(function() {
+    jQuery(document).ready(function($) {
+        $('#main-nav').hcOffcanvasNav({
+            disableAt: 530,
+            expanded: false,
+            swipeGestures: true,
+            height: 500
+        });
+    });
+});

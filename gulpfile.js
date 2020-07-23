@@ -11,6 +11,7 @@ let gulp = require('gulp'),
 gulp.task('style', function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
+            'node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -24,7 +25,8 @@ gulp.task('script', function() {
             'node_modules/typed.js/lib/typed.js',
             'node_modules/jarallax/dist/jarallax.js',
             'node_modules/js-cookie/src/js.cookie.js',
-            'node_modules/jquery.scrollto/jquery.scrollTo.js'
+            'node_modules/jquery.scrollto/jquery.scrollTo.js',
+            'node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
