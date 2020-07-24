@@ -47,6 +47,7 @@ $(function() {
             disableAt: 530,
             expanded: false,
             swipeGestures: true,
+            keepClasses: false,
             height: 500
         });
     });
