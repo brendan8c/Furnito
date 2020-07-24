@@ -1,6 +1,7 @@
 node_modules
 material
 package-lock.json
+app/css
 .DS_Store
 .AppleDouble
 .LSOverride
