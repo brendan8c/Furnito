@@ -1,6 +1,6 @@
 // Color vars 
 $blu: #0099FF;
-// Language rus - start
+// Language rus
 @mixin d400 {
     font-family: 'DidactGothic-Regular';
     font-weight: 400;
@@ -26,4 +26,13 @@ $blu: #0099FF;
     font-weight: 700;
 }
 
-// Language rus - end
+// footer stick to the bottom of page
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}

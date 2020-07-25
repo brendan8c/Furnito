@@ -27,61 +27,9 @@
             font-size: 20px;
             color: #fff;
             text-decoration: none;
-            // background-color: #0099ff54;
-            // border: 1px solid #5193cc;
-            // border-radius: 30px;
             padding: 5px 10px;
             &:hover {
                 text-shadow: 0 0 10px #000000;
-            }
-        }
-        &_nav {
-            position: absolute;
-            top: 0;
-            right: 0;
-            .line {
-                stroke: #fff !important;
-            }
-            .ham {
-                cursor: pointer;
-                -webkit-tap-highlight-color: transparent;
-                transition: transform 400ms;
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            .hamRotate.active {
-                transform: rotate(45deg);
-            }
-            .hamRotate180.active {
-                transform: rotate(180deg);
-            }
-            .line {
-                fill: none;
-                transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-                stroke: #000;
-                stroke-width: 5.5;
-                stroke-linecap: round;
-            }
-            .ham7 .top {
-                stroke-dasharray: 40 82;
-            }
-            .ham7 .middle {
-                stroke-dasharray: 40 111;
-            }
-            .ham7 .bottom {
-                stroke-dasharray: 40 161;
-            }
-            .ham7.active .top {
-                stroke-dasharray: 17 82;
-                stroke-dashoffset: -62px;
-            }
-            .ham7.active .middle {
-                stroke-dashoffset: 23px;
-            }
-            .ham7.active .bottom {
-                stroke-dashoffset: -83px;
             }
         }
     }
@@ -185,8 +133,6 @@
                 border: 1px solid $blu;
                 padding-left: 30px;
                 padding-right: 60px;
-                // ! добавить при адаптиве
-                // margin-bottom: 15px;
                 outline: none;
                 -webkit-appearance: none;
                 appearance: none;
@@ -412,10 +358,6 @@
         &__page02 {
             height: 500px;
         }
-        // &__page05 {
-        //     height: 90px;
-        //     background-color: #ffe7e7;
-        // }
         &__box01 {
             padding-top: 50px;
             padding-bottom: 50px;
@@ -589,6 +531,8 @@ h2:hover {
 }
 
 // #1grn  footer - end
+// #2pur contacts page ————————————*
+// #2pur contacts page ————————————*
 // #2pur====================
 // #1grn  cookie - start
 #cookie__bar {
