@@ -17,6 +17,7 @@ html {
 ul,
 li {
     list-style: none;
+    padding: 0;
 }
 
 body {
@@ -30,4 +31,12 @@ body {
 
 .site-content {
     flex: 1;
+}
+
+.catgor-decor {
+    &::before {
+        content: "– ";
+        font-size: 20px;
+        color: #ffffff;
+    }
 }

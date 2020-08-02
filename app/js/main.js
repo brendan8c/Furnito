@@ -44,7 +44,7 @@ $(function() {
 $(function() {
     jQuery(document).ready(function($) {
         $('#main-nav').hcOffcanvasNav({
-            disableAt: 530,
+            disableAt: 670,
             expanded: false,
             swipeGestures: true,
             keepClasses: false,
