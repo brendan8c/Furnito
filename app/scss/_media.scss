@@ -12,14 +12,13 @@
     }
     .header__main_wrap {
         margin-left: 350px;
+        margin-right: 100px;
     }
-    .header__box--logo {
-        width: 200px;
-        height: 90px;
-    }
-    .header__main {
-        padding-top: 10px;
-    }
+    // Для logo1
+    // .header__box--logo {
+    //     width: 200px;
+    //     height: 90px;
+    // }
 }
 
 // #2pur +
@@ -36,11 +35,15 @@
 // #2pur +
 @media (max-width: 1200px) {
     .header__box--logo {
-        width: 175px;
-        height: 75px;
+        // Для logo1
+        // width: 175px;
+        // height: 75px;
+        width: 248px;
+        height: 76px;
     }
     .header__main_wrap {
         margin-left: 250px;
+        margin-right: 50px;
     }
 }
 
@@ -48,7 +51,6 @@
 @media (max-width: 1100px) {
     .header__main_wrap {
         margin-left: 210px;
-        margin-right: 100px;
     }
     .content__box01 h2 {
         letter-spacing: 35px !important;
@@ -56,6 +58,15 @@
     .content__box01 {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
+    }
+}
+
+// #2pur +
+@media (max-width: 1000px) {
+    .header__box--logo {
+        width: 210px;
+        height: 63px;
+        margin-top: 5px;
     }
 }
 
@@ -76,8 +87,21 @@
         margin-right: 30px;
     }
     .header__box--logo {
-        width: 150px;
-        height: 60px;
+        // Для logo1
+        // width: 150px;
+        // height: 60px;
+        width: 185px;
+        height: 56px;
+        margin-top: 7px;
+    }
+}
+
+// #2pur +
+@media (max-width: 855px) {
+    .header__box--logo {
+        width: 165px;
+        height: 49px;
+        margin-top: 10px;
     }
 }
 
@@ -87,6 +111,15 @@
         line-height: 20px;
         letter-spacing: 23px !important;
     }
+    .header__box--logo {
+        display: none;
+    }
+    .header__main--home-page {
+        display: contents;
+    }
+    .header__main_wrap {
+        margin-left: 30px;
+    }
 }
 
 // #2pur +
@@ -95,9 +128,10 @@
         width: 120px;
         height: 50px;
     }
-    .header__main_wrap {
-        margin-left: 110px;
-    }
+    // Для logo1 
+    // .header__main_wrap {
+    //     margin-left: 110px;
+    // }
     .header__wrap-form {
         min-height: 300px;
     }
@@ -106,19 +140,19 @@
     }
 }
 
-// #2pur +
-@media (max-width: 700px) {
-    .header__box--logo {
-        display: none;
-    }
-    .header__main_wrap {
-        margin-left: 0;
-    }
-    .header__main--home-page {
-        display: contents;
-    }
-}
-
+// Для logo1 
+// // #2pur +
+// @media (max-width: 700px) {
+//     .header__box--logo {
+//         display: none;
+//     }
+//     .header__main_wrap {
+//         margin-left: 35px;
+//     }
+//     .header__main--home-page {
+//         display: contents;
+//     }
+// }
 // #2pur +
 @media (max-width: 664px) {
     .region-in {

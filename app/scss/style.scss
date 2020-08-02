@@ -15,7 +15,7 @@
         height: 65px;
         width: 100%;
         background-color: #3378CA;
-        padding-top: 20px;
+        padding-top: 10px;
         &_wrap {
             display: flex;
             justify-content: space-between;
@@ -91,12 +91,14 @@
             position: absolute;
             left: 7px;
             top: -55px;
-            background-image: url(../img/logo1.png);
+            background-image: url(../img/logo.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: 228px;
-            height: 99px;
+            // width: 228px;
+            // height: 99px;
+            width: 345px;
+            height: 100px;
             transition: all .5s;
             &:hover {
                 cursor: pointer;
