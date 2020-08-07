@@ -4,7 +4,7 @@
 // #1grn header - start 
 .header {
     .hc-nav-trigger {
-        left: 20px;
+        right: 20px;
     }
     .hc-nav-trigger span,
     .hc-nav-trigger span::before,
@@ -16,11 +16,62 @@
         width: 100%;
         background-color: #3378CA;
         padding-top: 10px;
+        position: relative;
+        #main-nav {
+            display: flex;
+            justify-content: center;
+        }
+        .logo-animation {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            &__leer {
+                position: absolute;
+                top: -3px;
+                border-radius: 10px;
+                border-top: 3px solid #fff;
+                animation: bounce 3s infinite linear;
+                border-top-right-radius: 0px !important;
+                border-top-left-radius: 0px !important;
+            }
+            &__leer0 {
+                z-index: 5;
+                bottom: -50px;
+                left: 12px;
+                position: absolute;
+                font-family: 'Arima Madurai', cursive;
+                font-size: 40px;
+                color: #0064c7;
+                text-shadow: -1px 0 #3c3d3e, 0 1px #3c3d3e, 1px 0 #3c3d3e, 0 -1px #3c3d3e;
+            }
+            &__leer1 {
+                z-index: 2;
+                left: 0;
+                background-color: #bc6aff;
+                width: 60px;
+                height: 50px;
+            }
+            &__leer2 {
+                z-index: 3;
+                left: 38px;
+                background-color: #fec911;
+                width: 50px;
+                height: 50px;
+                animation-delay: 1s;
+            }
+            &__leer3 {
+                z-index: 1;
+                left: 26px;
+                background-color: #15b8ff;
+                width: 150px;
+                height: 50px;
+                animation-delay: 2s;
+            }
+        }
         &_wrap {
             display: flex;
             justify-content: space-between;
-            margin-left: 400px;
-            margin-right: 200px;
+            width: 700px;
         }
         &--page {
             @include c400;
@@ -53,7 +104,7 @@
             top: 45px;
             left: -45px;
             height: 0;
-            z-index: 3;
+            z-index: 4;
             padding-bottom: 0;
             background-color: #3378CA;
             border-radius: 18px;
@@ -87,26 +138,9 @@
         }
     }
     &__box {
-        &--logo {
-            position: absolute;
-            left: 7px;
-            top: -55px;
-            background-image: url(../img/logo.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            // width: 228px;
-            // height: 99px;
-            width: 345px;
-            height: 100px;
-            transition: all .5s;
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.05)
-            }
-        }
-        z-index: 2;
         position: absolute;
+        top: 63px;
+        z-index: 2;
         width: 100%;
         svg {
             width: 100%;

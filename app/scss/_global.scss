@@ -40,3 +40,94 @@ body {
         color: #ffffff;
     }
 }
+
+// Полоска скрола 
+html {
+    //#2grn Полоса прокрутки для Internet Explorer
+    // цвет самой полосы
+    scrollbar-face-color: #5997CA;
+    // цвет разделяющей полосы
+    scrollbar-shadow-color: #ffffff;
+    // цвет разделяющей полосы
+    scrollbar-highlight-color: #ffffff;
+    // цвет внешних границ полосы
+    scrollbar-3dlight-color: #5997CA;
+    // цвет внешних границ полосы
+    scrollbar-darkshadow-color: #5997CA;
+    // цвет подложки
+    scrollbar-track-color: #F6F6F6;
+    // цвет стрелки
+    scrollbar-arrow-color: #F6F6F6;
+    //#2grn Полоса прокрутки для Google Chrome
+    // вертикальный скроллбар
+     ::-webkit-scrollbar {
+        width: 22px;
+    }
+    // горизонтальный скроллбар
+     ::-webkit-scrollbar:horizontal {
+        height: 22px;
+    }
+    // цвет кнопки с верху и с низу
+     ::-webkit-scrollbar-button {
+        height: 0px;
+    }
+    // трек
+     ::-webkit-scrollbar-track {
+        background: #5997CA;
+    }
+    // видимая часть трека
+     ::-webkit-scrollbar-track-piece {
+        background: #add8e6;
+    }
+    // ползунок
+     ::-webkit-scrollbar-thumb {
+        background: #5997CA;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+    }
+     ::-webkit-scrollbar-corner {
+        background: #5997CA;
+    }
+}
+
+// Анимация логотипа 
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(0%);
+        height: 65px;
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+// Бурегр меню стили
+.nav-content {
+    h2 {
+        font-family: 'Comfortaa-Medium' !important;
+        color: #fff !important;
+        font-size: 25px;
+        padding: 0px 17px;
+    }
+}
+
+h2:nth-child(1):hover {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+.hc-offcanvas-nav li.nav-close span::after,
+.hc-offcanvas-nav li.nav-close span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -3px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
