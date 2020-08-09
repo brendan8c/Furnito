@@ -10,7 +10,7 @@
 [class^="icon-"],
 [class*=" icon-"] {
     /* используйте! Важно, чтобы предотвратить проблемы с расширениями браузера, которые изменяют шрифты */
-    font-family: 'icomoon' !important;
+    font-family: 'icomoon';
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -22,8 +22,44 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quill:before {
+    content: "\e907";
+}
+
+.icon-file-text2:before {
+    content: "\e926";
+}
+
+.icon-credit-card:before {
+    content: "\e93f";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-hammer:before {
+    content: "\e996";
+}
+
+.icon-gift:before {
+    content: "\e99f";
+}
+
+.icon-truck:before {
+    content: "\e9b0";
+}
+
+.icon-loop2:before {
+    content: "\ea2e";
+}
+
 .icon-circle-up:before {
     content: "\ea41";
+}
+
+.icon-ungroup:before {
+    content: "\ea59";
 }
 
 // Language rus - start

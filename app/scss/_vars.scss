@@ -26,6 +26,11 @@ $blu: #0099FF;
     font-weight: 700;
 }
 
+@mixin i000 {
+    font-family: 'icomoon';
+    font-weight: normal;
+}
+
 // footer stick to the bottom of page
 body {
     display: flex;

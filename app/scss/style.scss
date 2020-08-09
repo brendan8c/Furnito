@@ -82,8 +82,17 @@
             padding-right: 10px;
             padding-bottom: 30px;
             display: inline-block;
-            &:hover {
-                text-shadow: 0 0 10px #000000;
+            position: relative;
+            &-anim {
+                position: absolute;
+                z-index: 5;
+                bottom: 20px;
+                height: 2px;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: 50% 0;
+                background-color: #add8e6;
+                border-radius: 50px;
             }
         }
         &--home-page {
@@ -92,10 +101,12 @@
         &-box {
             position: relative;
             display: inline-block;
+            &:hover .header__main--page-anim {
+                transition: all .5s;
+                transform: scalex(1);
+            }
             &--page1:hover .header__main--categor-0 {
                 transition: all .3s;
-                height: 288px;
-                padding-bottom: 20px;
                 transform: scaleY(1);
             }
             &--page1:hover .header__main--categor-1 {
@@ -109,11 +120,10 @@
         }
         &--categor-0 {
             position: absolute;
-            top: 45px;
+            top: 30px;
             left: -45px;
-            height: 0;
             z-index: 4;
-            padding-bottom: 0;
+            padding-top: 30px;
             background-color: #3378CA;
             border-radius: 18px;
             display: flex;
@@ -121,7 +131,6 @@
             transition: all .5s;
             transform: scaleY(0);
             transform-origin: 50% 0;
-            // width: 200px;
             width: max-content;
             &-list {
                 @include c300;
@@ -136,7 +145,7 @@
                     color: #3378CA;
                     background-color: #add8e6;
                     border-radius: 18px;
-                    font-weight: 700;
+                    text-shadow: -1px 0 #3378CA, 0 1px #3378CA, 1px 0 #3378CA, 0 -1px #3378CA;
                 }
             }
             & ul {
@@ -147,7 +156,7 @@
         }
         &--categor-1 {
             position: absolute;
-            top: 20px;
+            top: 30px;
             left: -310px;
             width: 720px;
             z-index: 4;
@@ -213,6 +222,136 @@
             transform: scaleY(0);
             transform-origin: 50% 0;
             background-color: #3378CA;
+            .icon-main-1 {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .icon-main-1 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e9b0";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-2 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e986";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-3 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\ea2e";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-4 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e996";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-5 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e93f";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-6 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e926";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-7 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\ea59";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-8 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e907";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
+            .icon-main-9 {
+                padding-left: 20px;
+                padding-right: 20px;
+                &::before {
+                    content: "\e99f";
+                    @include i000;
+                    margin-right: 15px;
+                    font-size: 22px;
+                    color: #becfe7;
+                }
+                &:hover::before {
+                    color: #d3e6ec;
+                }
+            }
         }
     }
     &__box {
