@@ -22,6 +22,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-envelope:before {
+    content: "\e900";
+}
+
 .icon-quill:before {
     content: "\e907";
 }
@@ -32,6 +36,14 @@
 
 .icon-credit-card:before {
     content: "\e93f";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-location2:before {
+    content: "\e948";
 }
 
 .icon-search:before {
@@ -95,5 +107,14 @@
     font-family: 'Comfortaa-Bold';
     src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
+}
+
+// Language en - start
+// Для логотипа
+@font-face {
+    font-family: 'ArimaMadurai-Black';
+    src: url('../fonts/ArimaMadurai-Black.ttf') format('truetype');
+    font-weight: 900;
     font-display: swap;
 }

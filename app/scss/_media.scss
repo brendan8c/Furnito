@@ -112,6 +112,9 @@
     .content__box01 h2 {
         letter-spacing: 10px !important;
     }
+    .contat-page__maps iframe {
+        height: 400px;
+    }
 }
 
 // #2pur +
@@ -128,6 +131,34 @@
         line-height: 20px;
         letter-spacing: 0 !important;
         font-size: 30px !important;
+    }
+}
+
+// #2pur +
+@media (max-width: 440px) {
+    .contat-page__title h1 {
+        font-size: 23px;
+    }
+    .contat-page__phone--title-other {
+        font-size: 18px;
+    }
+    .contat-page__phone--number {
+        font-size: 22px;
+    }
+    .contat-page__phone--title {
+        font-size: 23px;
+    }
+    .contat-page__email--title-other {
+        font-size: 18px;
+    }
+    .contat-page__email--text {
+        font-size: 22px;
+    }
+    .contat-page__maps-title h2 {
+        font-size: 23px;
+    }
+    .contat-page__maps iframe {
+        height: 300px;
     }
 }
 

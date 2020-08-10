@@ -39,7 +39,7 @@
                 bottom: -50px;
                 left: 12px;
                 position: absolute;
-                font-family: 'Arima Madurai', cursive;
+                font-family: 'ArimaMadurai-Black';
                 font-size: 40px;
                 color: #0064c7;
                 text-shadow: -1px 0 #3c3d3e, 0 1px #3c3d3e, 1px 0 #3c3d3e, 0 -1px #3c3d3e;
@@ -838,6 +838,183 @@ h2:hover {
 
 // #1grn  footer - end
 // #2pur contacts page ————————————*
+.contat-page {
+    background-color: #6db9df;
+    &__box {
+        background-color: #3398ca;
+        padding-top: 100px;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__title {
+        text-align: center;
+        border-bottom: 2px solid #6db9df;
+        padding-bottom: 30px;
+        h1 {
+            @include c700;
+            font-size: 30px;
+            color: #ffffff;
+        }
+        img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 7px -7px 10px #6db9df, -7px -7px 10px #6db9df, 7px 7px 10px #6db9df, -7px 7px 10px #6db9df;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__phone {
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #6db9df;
+        &--title {
+            @include c400;
+            font-size: 25px;
+            color: #fff;
+            line-height: 40px;
+            &::after {
+                content: "\e942";
+                font-family: 'icomoon';
+                font-size: 20px;
+                color: #6db9df;
+                margin-left: 15px;
+            }
+        }
+        &--title-other {
+            @include c300;
+            font-size: 20px;
+            color: #fff;
+            line-height: 40px;
+        }
+        &--wrap {
+            position: relative;
+            display: inline-block;
+            &:hover .contat-page__phone-anim {
+                transition: all .5s;
+                transform: scaleY(1);
+            }
+        }
+        &-anim {
+            position: absolute;
+            z-index: 5;
+            bottom: 0px;
+            height: 2px;
+            width: 100%;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            background-color: #add8e6;
+            border-radius: 50px;
+            transition: all .5s;
+        }
+        &--number {
+            @include c300;
+            font-size: 25px;
+            color: #fff;
+            line-height: 40px;
+            text-decoration: none;
+        }
+    }
+    &__email {
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #6db9df;
+        &--title {
+            @include c400;
+            font-size: 25px;
+            color: #fff;
+            line-height: 40px;
+            &::after {
+                content: "\e900";
+                font-family: 'icomoon';
+                font-size: 20px;
+                color: #6db9df;
+                margin-left: 15px;
+            }
+        }
+        &--title-other {
+            @include c300;
+            font-size: 20px;
+            color: #fff;
+            line-height: 40px;
+        }
+        &--wrap {
+            position: relative;
+            display: inline-block;
+            &:hover .contat-page__email-anim {
+                transition: all .5s;
+                transform: scaleY(1);
+            }
+        }
+        &-anim {
+            position: absolute;
+            z-index: 5;
+            bottom: 0px;
+            height: 2px;
+            width: 100%;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            background-color: #add8e6;
+            border-radius: 50px;
+            transition: all .5s;
+        }
+        &--text {
+            @include c300;
+            font-size: 25px;
+            color: #fff;
+            line-height: 40px;
+            text-decoration: none;
+        }
+    }
+    &__maps {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            h2 {
+                @include c700;
+                font-size: 30px;
+                color: #ffffff;
+                display: block;
+                text-align: center;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/map.svg);
+                    position: relative;
+                    top: 19px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 55px;
+                    height: 55px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        iframe {
+            margin: 25px auto;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+        }
+    }
+}
+
 // #2pur contacts page ————————————*
 // #2pur====================
 // #1grn  cookie - start
