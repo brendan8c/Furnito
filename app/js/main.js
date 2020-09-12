@@ -53,3 +53,8 @@ $(function() {
         });
     });
 });
+// Параллакс
+jarallax(document.querySelectorAll('.jarallax'), {
+    speed: -1.0,
+    imgSize: cover
+});

@@ -24,6 +24,7 @@ gulp.task('script', function() {
             'node_modules/Vide-0.5.1/dist/jquery.vide.js',
             'node_modules/typed.js/lib/typed.js',
             'node_modules/jarallax/dist/jarallax.js',
+            'node_modules/jarallax/dist/jarallax-video.js',
             'node_modules/js-cookie/src/js.cookie.js',
             'node_modules/jquery.scrollto/jquery.scrollTo.js',
             'node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js'
