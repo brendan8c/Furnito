@@ -23,7 +23,7 @@
         "jarallax": "^1.12.2",
         "jquery.scrollto": "^2.1.2",
         "js-cookie": "^2.2.1",
-        "lodash": "^4.17.20",
+        "lodash": "^4.17.21",
         "lodash.template": "^4.5.0",
         "magnific-popup": "^1.1.0",
         "normalize.css": "^8.0.1",
